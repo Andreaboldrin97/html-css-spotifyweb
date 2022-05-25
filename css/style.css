@@ -75,7 +75,7 @@ input{
  /* main nav */
 .nav-user{
     width: 200px;
-    height: 100vh;
+    height: calc(100vh - 80px);
     line-height: 35px;
     padding: 15px 15px;
     background-color: #000;
@@ -88,11 +88,13 @@ input{
 }
 /* main head */
 .section-main{
-    width:calc(100% - 200px)
+    width:calc(100% - 200px);
+    height: calc(100vh - 80px);;
 }
 .sec-header{
     width: 100%;
     height: 60px;
+    background-color: rgba(0, 0, 0, 0.294);
 }
 .main-header{
     position: fixed;
@@ -109,7 +111,6 @@ input{
 /* section viewport-main */
 .viewport-main{
     width: 100%;
-    height: calc(100vh - 65px);
     overflow: auto;
 }
 
