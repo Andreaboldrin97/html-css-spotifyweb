@@ -19,48 +19,54 @@
                 <nav class="">
                     <div class="logo">
                         <img src="./spotify/img/logo.svg" alt="logo">
+                        <div class="logo-small">
+                            <img src="./spotify/img/logo-small.svg" alt="logo">
+                        </div>
                     </div>
                     <div class="nav-bar">
                         <ul>
                             <li class="d-flex">
                                 <div><img src="./spotify/img/home.svg" alt=""></div>
-                                <div>Home</div>
+                                <div class="nav-text">Home</div>
                             </li>
                             <li class="d-flex">
                                 <div><img src="./spotify/img/search.svg" alt=""></div>
-                                <div><input type="search" placeholder="Cerca"></div>
+                                <div class="nav-text"><input type="search" placeholder="Cerca"></div>
                             </li>
                             <li class="d-flex">
                                 <div><img src="./spotify/img/libreria.svg" alt=""></div>
-                                <div>La tua libreria</div>
+                                <div class="nav-text">La tua libreria</div>
                             </li>
                         </ul>
                     </div>
                 </nav>
                 <div class="d-flex df-d-colm df-jc-sb user-sec">
-                    <div class="playlist">
+                    <div class="playlist nav-text">
                         <h4>PLAYLIST</h4>
                         <div class="d-flex">
                             <div><i class="fa-solid fa-plus"></i></div>
                             <div>Crea Playlist</div>
-                   </div>
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
-                        <div>Nome Playlist</div>
+                        </div>
+                        <div></div>
+                        <div class="playlist-area">
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                            <div>Nome Playlist</div>
+                        </div>
                     </div>
                     <div class="user ">
-                        <div class="d-flex">
+                        <div class="user-download d-flex">
                             <img src="./spotify/img/download.svg" alt="">
-                            <div>Installa app</div>
+                            <div class="nav-text">Installa app</div>
                         </div>
                         <hr>
-                        <div class="d-flex">
-                            <div><i class="fa-solid fa-user"></i></div>
-                            <div>John Doe</div>
+                        <div class="user-profile d-flex">
+                            <img src="./spotify/img/profile.svg" alt="">
+                            <div class="nav-text">John Doe</div>
                         </div>
                     </div>
                 </div>
@@ -76,7 +82,7 @@
                 <div>
                     <section>
                         <div class="container-nav-list text-cent">
-                            <ul class="d-flex df-jc-sa">
+                            <ul class="d-flex">
                                 <li>IN EVIDENZA</li>
                                 <li>PODCAST</li>
                                 <li>CLASSIFICHE</li>
@@ -157,8 +163,8 @@
         <div class="d-flex df-jc-sb bordo">
             <div class="d-flex audio">
                 <img src="./spotify/img/sinister.jpeg" alt="brano in ascolto">
-                <div>
-                    <div>Sinister</div>
+                <div class="song-text">
+                    <h3> Sinister</h3>
                     <div>Brano Nome</div>
                 </div>
                 <div class="user-audio d-flex">
@@ -168,25 +174,29 @@
             </div>
         </div>
         <div class="bordo audio-sec">
-            <div class="d-flex df-jc-sa">
+            <div class="audio-move d-flex ">
                 <i class="fa-solid fa-shuffle"></i>
                 <i id="c-back" class="fa-solid fa-forward-step"></i>
-                <i class="fa-regular fa-circle-play"></i>
+                <i id="play" class="fa-regular fa-circle-play"></i>
                 <i class="fa-solid fa-forward-step"></i>
                 <i class="fa-solid fa-rotate-right"></i>
             </div>
             <div class="d-flex df-jc-sb">
-                <div>0.25</div>
-                <div class="audio-duration"></div>
-                <div>4.35</div>
+                <div class="time">0.25</div>
+                <div class="audio-duration">
+                    <div class="audio-sel"></div>
+                </div>
+                <div class="time">4.20</div>
             </div>
         </div>
-         <div class="d-flex df-jc-sa audio-mix bordo">
+         <div class="d-flex audio-mix bordo">
             <div class="d-flex">
                 <i class="fa-solid fa-list-ul"></i>
                 <i class="fa-solid fa-display"></i>
                 <i class="fa-solid fa-volume-high"></i>
-                <div class="audio-mixer"></div>
+                <div class="audio-mixer">
+                    <div class="audio-sel"></div>
+                </div>
             </div>
         </div>
     </footer>

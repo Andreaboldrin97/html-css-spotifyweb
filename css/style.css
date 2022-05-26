@@ -83,6 +83,7 @@ input{
     line-height: 35px;
     padding: 15px 15px;
     background-color: #000;
+    font-size: 165x;
 }
 .logo {
     width: 50%;
@@ -90,11 +91,46 @@ input{
 .user-sec{
     height: calc(100vh - 260px);
 }
+.nav-bar li img{
+    width: 25px;
+    margin-right: 10px;
+    align-self: center;
+}
+.user img{
+    width: 20px;
+    margin-right: 10px;
+}
+.logo-small{
+    display: none;
+}
+.playlist i{
+    background-color: gray;
+    color: black;
+    padding: 7px;
+    text-align: center;
+    margin-right: 10px;
+}
+.playlist-area{
+    font-size: 13px;
+    overflow: auto;
+}
+.user-download{
+    font-size: 10px;
+}
+.user-download img{
+    width: 15px;
+}
+.user-profile img{
+    background-color: gray;
+    height: 20px;
+    border-radius: 50%;
+    align-self: center;
 
-.nav-bar img, .user img{
-    width: 30px;
 }
 /* main head */
+main{
+    overflow: hidden;
+}
 .section-main{
     width:calc(100% - 200px);
     height: calc(100vh - 80px);;
@@ -103,11 +139,11 @@ input{
 .main-header{
     width:calc(100% - 200px);
     height: 60px;
-    background-color: rgba(25, 24, 24, 0.163);
+    background-color: rgba(25, 24, 24, 0.4);
     text-align: end;
     position: fixed;
     top: 0;
-    padding: 20px;
+    padding: 20px 25px;
 }
 .btn{
     margin-top: 20px;
@@ -115,14 +151,24 @@ input{
     border: 1px solid white;
     border-radius: 20px;
     padding: 5px 10px;
+    cursor: pointer;
 }
 /* section viewport-main */
+section{
+    padding: 5px 10px;
+}
 .viewport-main{
     padding-top: 60px;
     width: 100%;
     overflow: auto;
 }
-
+.viewport-main ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.viewport-main li{
+    margin: 0 10px;
+}
 /* main nav section */
 
 .container-nav-list{
@@ -144,34 +190,60 @@ input{
 
 /* footer */
 footer{
-    background-color: rgb(77, 30, 171);
+    background-color: var(--color-bg-main);
     height: 80px;
     width: 100%;
-    padding: 20px 10px;
+    padding: 15px 5px;
+    font-size: 11px;
+}
+footer i{
+    margin: 10px 5px;
 }
 .audio-duration{
+    margin-top: 5px;
     width: 350px;
-    height: 1px;
+    height: 4px;
     border: 1px solid;
     border-radius: 5px;
     color: var(--color-text);
 }
 .audio-mixer{
-    width: 100px;
-    height: 1px;
+    margin-top: 15px;
+    min-width: 70px;
+    height: 4px;
     border: 1px solid;
     border-radius: 5px;
     color: var(--color-text);
 }
-.audio{
-    width: 30%;
+.time{
+    margin: 0 10px;
 }
-.audio-sec{
-    width: 30%;
+.audio-move{
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+}
+.audio-move i{
+    margin: 0 10px;
+}
+#c-back{
+    transform: rotate(180deg);
 }
 .audio-mix{
-    justify-content: flex-end;
 }   
+.song-text{
+    font-size: 10px;
+    margin: 1px 10px;
+}
+.audio-sel{
+    width: 50%;
+    height: 3px;
+    background-color:var(--color-text) ;
+}
+h3{
+    color: white;
+    font-size: 17px;
+}
 
 /* media-query */
 
@@ -182,7 +254,7 @@ footer{
 
 
 
-/* media lg */
+/* media md */
 @media all and (max-width: 701px) {
     .card{
         width: calc(100% / 4 - 20px);
@@ -193,7 +265,7 @@ footer{
 
 
 
-/* media lg */
+/* media s */
 @media all and (max-width: 601px) {
     .card{
         width: calc(100% / 2 - 10px);
@@ -207,9 +279,13 @@ footer{
 
 
 
-/* media lg */
+/* media xs */
 @media all and (max-width: 250px) {
       /* footer */
+      body{
+          min-width: 320px;
+      }
+
       .audio-duration{
         width: 350px;
     }
