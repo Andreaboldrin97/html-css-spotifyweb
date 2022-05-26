@@ -83,7 +83,7 @@ input{
     line-height: 35px;
     padding: 15px 15px;
     background-color: #000;
-    font-size: 165x;
+    font-size: 16px;
 }
 .logo {
     width: 50%;
@@ -113,7 +113,7 @@ input{
 .playlist-area{
     font-size: 13px;
     height: 100%;
-    min-height: 100px;
+    min-height: 95px;
     overflow: auto;
 }
 .user-download{
@@ -174,7 +174,7 @@ section{
 /* main nav section */
 
 .container-nav-list{
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 }
 .container-nav-list li{
@@ -198,8 +198,17 @@ footer{
     padding: 15px 5px;
     font-size: 11px;
 }
-footer i{
+.audio-mix i, .user-audio i{
     margin: 10px 5px;
+}
+.audio{
+width: 33%;
+}
+.audio-sec{
+    width: 33%;
+}
+.audio-mix{
+    justify-content: flex-end;
 }
 .audio-duration{
     margin-top: 5px;
@@ -210,8 +219,8 @@ footer i{
     color: var(--color-text);
 }
 .audio-mixer{
+    width: 60px;
     margin-top: 15px;
-    min-width: 70px;
     height: 4px;
     border: 1px solid;
     border-radius: 5px;
@@ -231,8 +240,6 @@ footer i{
 #c-back{
     transform: rotate(180deg);
 }
-.audio-mix{
-}   
 .song-text{
     font-size: 10px;
     margin: 1px 10px;
@@ -249,15 +256,8 @@ h3{
 
 /* media-query */
 
-/* media lg */
-@media all and (max-width: 1100px) {
-  
-}
-
-
-
 /* media md */
-@media all and (max-width: 701px) {
+@media all and (max-width: 1100px) {
     .card{
         width: calc(100% / 4 - 20px);
     }
@@ -268,7 +268,7 @@ h3{
 
 
 /* media s */
-@media all and (max-width: 601px) {
+@media all and (max-width: 701px) {
     .card{
         width: calc(100% / 2 - 10px);
         margin: 5px;
@@ -277,30 +277,59 @@ h3{
       .user-audio{
           flex-direction: column;
       }
+      .user-audio i{
+          margin: 5px;
+      }
      
 
 
 
 /* media xs */
-@media all and (max-width: 250px) {
-      /* footer */
-      body{
-          min-width: 320px;
-      }
+@media all and (max-width: 600px) {
+    /* main nav */
+    .logo-small{
+        display: block;
+    }
+    .nav-user{
+        width: 60px;
+        text-align: center;
+    }
+    .nav-user img{
+        cursor: pointer;
+    }
+    .user-sec{
+        justify-content: end;
+        padding: 15px 5px;
+    }
+    .user img{
+        margin: unset;
+    }
+    .user-download{
+        margin-left: 2px;
+    }
+    .user-profile{
+        margin-top: 10px;
+    }
+    .logo, .nav-text, .playlist, .playlist-area,.user hr{
+        display: none;
+    }
+    /* viewport main */
+    .main-header{
+        width:calc(100% - 70px);
+        padding: 20px 10px ;
+    }
+      .section-main{
+        width:calc(100% - 60px);
+        height: calc(100vh - 80px);
+    }
 
-      .audio-duration{
-        width: 350px;
-    }
-    .audio-mixer{
-        width: 100px;
-    }
-    .audio{
-        width: 30%;
-    }
-    .audio-sec{
-        width: 30%;
-    }
-    .audio-mix{
-        width: 30%;
-    }
+      /* footer */
+      footer{
+          width: 100%;
+      }
+      .audio-move{
+          font-size: 10px;
+
+      }
+ 
 }
