@@ -255,6 +255,7 @@ width: 33%;
     border: 1px solid;
     border-radius: 5px;
     color: var(--color-text);
+    position: relative;
 }
 .audio-mixer{
     width: 60px;
@@ -263,6 +264,7 @@ width: 33%;
     border: 1px solid;
     border-radius: 5px;
     color: var(--color-text);
+    position: relative;
 }
 .time{
     margin: 0 10px;
@@ -288,6 +290,18 @@ h3{
     color: white;
     font-size: 17px;
 }
+.circle{
+    content: '';
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #fff;   
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: -4px;
+    display: none;
+}
 /* footer hover */
 
 footer i:hover{
@@ -296,6 +310,13 @@ footer i:hover{
 #play:hover{
     font-size: 26px;
 }
+.audio-sec:hover .circle{
+    display: block;
+}
+.audio-nav:hover .circle{
+    display: block;
+}
+
 /* media-query */
 
 /* media md */
