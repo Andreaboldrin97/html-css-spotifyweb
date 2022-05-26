@@ -112,6 +112,8 @@ input{
 }
 .playlist-area{
     font-size: 13px;
+    height: 100%;
+    min-height: 100px;
     overflow: auto;
 }
 .user-download{
