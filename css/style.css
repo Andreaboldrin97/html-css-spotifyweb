@@ -326,7 +326,7 @@ footer i:hover{
 .audio-nav:hover .circle{
     display: block;
 }
-.audio-sel:hover{
+.audio-sec:hover .audio-sel, .audio-mix:hover .audio-sel{
     background-color: var(--color-spotify);
 }
 
