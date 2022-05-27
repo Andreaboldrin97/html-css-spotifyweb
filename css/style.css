@@ -63,6 +63,9 @@ h4{
     color: white;
     margin: 10px auto;
 }
+li{
+    cursor: pointer;
+}
 input{
     color: var(--color-text);
     background-color: #000;
@@ -128,6 +131,17 @@ input{
     border-radius: 50%;
     align-self: center;
 }
+.border-l{
+    border-left: 3px solid #1ed760;
+    margin-left: -15px;
+    margin-right: 12px;
+}
+.border-b{
+    height: 2px;
+    width: 60px;
+    margin: 3px auto;
+    border-left: 60px solid #1ed760;
+}
 /* hover nav-tab */
 /* main head */
 main{
@@ -169,7 +183,7 @@ section{
     justify-content: center;
 }
 .viewport-main li{
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 /* main nav section */
 
@@ -180,6 +194,7 @@ section{
 .container-nav-list li{
     flex-wrap: wrap;
     text-align: center;
+    font-size: 15px;
 }
 /* main recently played */
 .cards{
@@ -188,14 +203,17 @@ section{
 .card{
     width: calc(100% / 6 - 20px);
     margin: 10px;
+}
+.img-card{
     position: relative;
 }
 .play-hover{
    display: none;
     position: absolute;
-    top: 18%;
-    left: 35%;
+    top: 50%;
+    left: 50%;
     font-size: 50px;
+    transform: translate(-50% , -50%);
 }
 .c-circle img{
     border-radius: 50%;
@@ -273,6 +291,7 @@ width: 33%;
     justify-content: center;
     font-size: 20px;
     color: white;
+    margin-bottom: 10px;
 }
 .audio-move i{
     margin: 0 10px;
@@ -389,10 +408,6 @@ footer i:hover{
       /* footer */
       footer{
           width: 100%;
-      }
-      .audio-move{
-          font-size: 10px;
-
       }
  
 }
