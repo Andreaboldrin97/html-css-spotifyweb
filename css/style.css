@@ -327,13 +327,18 @@ footer i:hover{
     color: white;
 }
 #play:hover{
-    font-size: 26px;
+    font-size: 30px;
+    position: relative;
+    top: -5px;
 }
 .audio-sec:hover .circle{
     display: block;
 }
 .audio-nav:hover .circle{
     display: block;
+}
+.audio-sel:hover{
+    background-color: var(--color-spotify);
 }
 
 /* media-query */
